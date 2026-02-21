@@ -1,0 +1,132 @@
+@import url('./fonts.css');
+@import url('./vars.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: var(--main-font-size);
+    font-family: var(--main-font-family);
+    line-height: 1.5;
+    color: #000;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- HEADER --- */
+
+.header {
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+
+/* Групуємо ENG та MENU зліва */
+.nav__left {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.lang__link {
+    font-family: "Tourney";
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Відстань між словами та слешем */
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu__link {
+    font-family: "Staatliches";
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo__img {
+    display: block;
+    height: 49px;
+}
+
+/* --- CONTENT SECTION --- */
+
+.title {
+    font-family: var(--title-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    letter-spacing: 0.04em;
+}
+
+.chapter {
+    font-family: var(--chapter-font-family);
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+    white-space: nowrap;
+    line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    font-family: monospace;
+    background-color: #F4F4F4;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+main.container {
+    padding-bottom: 90px;
+    /* Додає відступ знизу сторінки */
+}
